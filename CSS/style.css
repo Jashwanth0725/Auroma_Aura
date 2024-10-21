@@ -1,31 +1,41 @@
 /*Global*/
-html,body{
-    margin: 0;                      /* Remove default margin */
-    padding: 0;                     /* Remove default padding */
-    height: 100%;                   /* Set body height to 100% */
-    width: 100%; 
+html,
+body {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    height: 100%;
+    /* Set body height to 100% */
+    width: 100%;
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;  /* Regular weight */
-    font-size: 16px;   /* Base font size */
-    line-height: 1.5;  /* Spacing between lines */
-    color: #333;   
-    background-color: aliceblue;    /* Dark gray color for text */
+    font-weight: 400;
+    /* Regular weight */
+    font-size: 16px;
+    /* Base font size */
+    line-height: 1.5;
+    /* Spacing between lines */
+    color: #333;
+    background-color: aliceblue;
+    /* Dark gray color for text */
 }
-.container{
+
+.container {
     border-bottom: 1px solid teal;
-    width:100%;
+    width: 100%;
     overflow: hidden;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
-a:hover{
-    color:teal;
+
+a:hover {
+    color: teal;
 }
 
-li{
+li {
     list-style: none;
     padding: 20px;
 }
@@ -33,96 +43,122 @@ li{
 /*Index */
 /*Body*/
 /* Navigation bar*/
-.nav-bar{
+.nav-bar {
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 1000;
     width: 100%;
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px ;
+    padding: 7px;
     flex-wrap: nowrap;
     background-color: lightblu;
 }
-.nav-bar b{
-    padding-left:4px;
+
+.nav-bar b {
+    padding-left: 4px;
 }
-#branding{
-    padding-left:20px;
+
+#branding {
+    padding-left: 20px;
 }
 
 form#search {
-    flex: 1;                                   /* Allow search form to grow and shrink */
-    display: flex;     
-    justify-content: center;                        /* Use flexbox inside the form */
-    align-items: center;                       /* Center align items vertically */
-    margin: 0 ;   
-    padding-left: 20px;                        /* Add margin for spacing */
+    flex: 1;
+    /* Allow search form to grow and shrink */
+    display: flex;
+    justify-content: center;
+    /* Use flexbox inside the form */
+    align-items: center;
+    /* Center align items vertically */
+    margin: 0;
+    padding-left: 20px;
+    /* Add margin for spacing */
 }
 
-input[type="search"],input[type="text"],input[type="password"]{
-    
+input[type="search"],
+input[type="text"],
+input[type="password"] {
+
     border: 1px solid lightblue;
     background-color: white;
-    transition: border 0.3s ease, box-shadow 0.10s ease; /* Smooth transitions */
+    transition: border 0.3s ease, box-shadow 0.10s ease;
+    /* Smooth transitions */
 }
-input[type="search"]{
-    padding:10px;
-    width:100%;
-    max-width:400px;
+
+input[type="search"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px 0 0 10px;
 }
-input[type="search"]:focus,input[type="text"]:focus,input[type="password"]:focus {
-    outline: none;                            /* Remove default outline on focus */
-    border: 1px solid teal;               /* Change border color on focus */
-    box-shadow: 0 0 5px rbga(0, 123, 255, 0.5); /* Add a subtle shadow effect */
+
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    /* Remove default outline on focus */
+    border: 1px solid teal;
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rbga(0, 123, 255, 0.5);
+    /* Add a subtle shadow effect */
 }
-#search-symbol{
-    padding:5px;
+
+#search-symbol {
+    padding: 5px;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;  
+    border-bottom-right-radius: 10px;
 }
-button{
-    border:1px solid lightblue;
+
+button {
+    border: 1px solid lightblue;
     border-left: 1px solid white;
-    cursor:pointer;
-    height:36.5px;
-    background-color: white;  
+    cursor: pointer;
+    height: 36.5px;
+    background-color: white;
 }
-#cart, #login,#help{
+
+#cart,
+#login,
+#help {
     margin: 0 20px;
     padding: 9px;
     border-radius: 8px;
 }
-.nav-bar-right{
+
+.nav-bar-right {
     margin-right: 15px;
 }
 
 /*branding */
 
-.container #greeting{
-    padding : 0 50px 0 20px;
+.container #greeting {
+    padding: 0 50px 0 20px;
 
 }
-.container #greeting h2{
+
+.container #greeting h2 {
     padding-top: 10px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
-.container #greeting h2 img{
-    padding-right:10px ;
-    padding-bottom:px ;
+
+.container #greeting h2 img {
+    padding-right: 10px;
+    padding-bottom: px;
 }
-.advertise{
-    display:flex;
-    justify-content:center;
+
+.advertise {
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: aliceblue;
     padding-bottom: 10px;
 }
-.container #Shop{
-    
+
+.container #Shop {
+
     background-color: lightblue;
     padding: 5px;
     border-radius: 10px;
@@ -131,11 +167,12 @@ button{
 }
 
 /*Catogery*/
-.container #cat{
+.container #cat {
     text-align: center;
 }
-.horizontal-scroll{
-    display:flex;
+
+.horizontal-scroll {
+    display: flex;
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -143,18 +180,20 @@ button{
     padding: 10px;
 }
 
-#item{
-    display:inline-flex;
+#item {
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
     border-radius: 10px;
     margin: 20px;
-    width:100px;
+    width: 100px;
     height: 120px;
-    background-color:rgb(242, 248, 253) ;
+    background-color: rgb(242, 248, 253);
 }
-.left-click, .right-click{
+
+.left-click,
+.right-click {
     background-color: white;
     border: none;
     cursor: pointer;
@@ -162,29 +201,37 @@ button{
     border-radius: 5px;
     margin: 0 10px;
 }
+
 /*Footer*/
-footer{
+footer {
     padding: 0 10px 0 10px;
     border-top: 1px solid teal;
 }
-footer li:not(footer #link){
+
+footer li:not(footer #link) {
     padding-left: 25px;
     padding-right: 25px;
 }
 
-.foot, #links, #join{
+.foot,
+#links,
+#join {
     padding: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
-.foot, footer #lin, #copy{
+
+.foot,
+footer #lin,
+#copy {
     margin: 0;
     padding: 0;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 /*Responsive settings*/
 @media (max-width: 545px) {
     .advertise {
@@ -194,38 +241,46 @@ footer li:not(footer #link){
 }
 
 /*login*/
-.contain{
-    display:flex;
+.contain {
+    display: flex;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
 }
-.image{
-    margin:50px;
+
+.image {
+    margin: 50px;
 }
-.image img{
+
+.image img {
     border-radius: 10px;
 }
-.login{
+
+.login {
     display: grid;
     justify-content: center;
     align-items: center;
-    color:black;
-    margin:100px;
+    color: black;
+    margin: 100px;
     padding: 0px 90px 70px 40px;
-    border:1px solid black;
-    background-color: whitesmoke;
+    border: 1px solid black;
+    background-color: rgb(230, 240, 249);
     border-radius: 10px;
 }
-#username,#password{
-    height:21px;
-    width:130%;
+
+#username,
+#password {
+    height: 21px;
+    width: 130%;
     border-radius: 4px;
 }
-#log, #submit{
+
+#log,
+#submit {
     padding: 10px 10px 10px 70px;
 }
-#submit button{
+
+#submit button {
     border-radius: 10px;
-    border:1px solid lightblue;
-    width:90%;
+    border: 1px solid lightblue;
+    width: 90%;
 }
