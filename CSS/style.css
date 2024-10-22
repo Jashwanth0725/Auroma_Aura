@@ -1,4 +1,4 @@
-/*Global*/
+/*.........................................Global....................................................*/
 html,
 body {
     margin: 0;
@@ -41,19 +41,23 @@ li {
 }
 
 /*Index */
-/*Body*/
-/* Navigation bar*/
-.nav-bar {
+/*....................................................Body..............................................*/
+/*..............................................Navigation bar.........................................*/
+.nav-bar-home {
     position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
+}
+
+.nav-bar,
+.nav-bar-home {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 7px;
-    flex-wrap: nowrap;
-    background-color: lightblu;
+    flex-wrap: wrap;
 }
 
 .nav-bar b {
@@ -79,11 +83,14 @@ form#search {
 
 input[type="search"],
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="textarea"] {
 
     border: 1px solid lightblue;
     background-color: white;
-    transition: border 0.3s ease, box-shadow 0.10s ease;
+    transition: border 0.20s ease, box-shadow 0.20s ease;
     /* Smooth transitions */
 }
 
@@ -96,7 +103,10 @@ input[type="search"] {
 
 input[type="search"]:focus,
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="textarea"]:focus {
     outline: none;
     /* Remove default outline on focus */
     border: 1px solid teal;
@@ -119,19 +129,22 @@ button {
     background-color: white;
 }
 
+
 #cart,
 #login,
 #help {
     margin: 0 20px;
-    padding: 9px;
+    padding: 5px;
     border-radius: 8px;
 }
 
 .nav-bar-right {
     margin-right: 15px;
+
 }
 
-/*branding */
+
+/*............................................branding..............................................*/
 
 .container #greeting {
     padding: 0 50px 0 20px;
@@ -166,7 +179,7 @@ button {
 
 }
 
-/*Catogery*/
+/*..................................................Catogery................................................*/
 .container #cat {
     text-align: center;
 }
@@ -190,6 +203,13 @@ button {
     width: 100px;
     height: 120px;
     background-color: rgb(242, 248, 253);
+    transition: transform 0.3s, z-index 0.3s;
+    position: relative;
+}
+
+#item:hover {
+    transform: scale(1.15);
+    z-index: 1;
 }
 
 .left-click,
@@ -202,7 +222,8 @@ button {
     margin: 0 10px;
 }
 
-/*Footer*/
+/*..........................................Footer........................................*/
+
 footer {
     padding: 0 10px 0 10px;
     border-top: 1px solid teal;
@@ -214,6 +235,8 @@ footer li:not(footer #link) {
 }
 
 .foot,
+.foot-contact,
+.foot-about,
 #links,
 #join {
     padding: 0;
@@ -224,6 +247,8 @@ footer li:not(footer #link) {
 }
 
 .foot,
+.foot-contact,
+.foot-about,
 footer #lin,
 #copy {
     margin: 0;
@@ -232,7 +257,7 @@ footer #lin,
     flex-wrap: wrap;
 }
 
-/*Responsive settings*/
+/*..................................Responsive settings....................................*/
 @media (max-width: 545px) {
     .advertise {
         padding-top: 40px;
@@ -240,47 +265,184 @@ footer #lin,
     }
 }
 
-/*login*/
-.contain {
+/*.........................................Login & SignUp.....................................*/
+.login-contain,
+.signup-contain {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.image {
-    margin: 50px;
+.look {
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
-.image img {
-    border-radius: 10px;
-}
-
-.login {
+.login,
+.signup {
     display: grid;
     justify-content: center;
     align-items: center;
     color: black;
     margin: 100px;
-    padding: 0px 90px 70px 40px;
+    padding: 0px 90px 50px 40px;
     border: 1px solid black;
-    background-color: rgb(230, 240, 249);
+    background-color: rgb(222, 239, 252);
     border-radius: 10px;
 }
 
 #username,
-#password {
+#password,
+#Email {
     height: 21px;
     width: 130%;
     border-radius: 4px;
 }
 
-#log,
-#submit {
+#enter {
+    margin: 5px 0 5px 0;
+}
+
+#login-submit,
+#signup-submit {
     padding: 10px 10px 10px 70px;
 }
 
-#submit button {
+#login-submit button,
+#signup-submit button {
     border-radius: 10px;
     border: 1px solid lightblue;
     width: 90%;
+}
+
+#login-submit button:hover,
+#signup-submit button:hover,
+#contact-submit button:hover {
+    background-color: aliceblue;
+    border: 1px solid rgb(130, 216, 245);
+}
+
+#login-forgot,
+#login-newtoaromaaura {
+    font-size: 12px;
+}
+
+#login-newtoaromaaura {
+    padding-left: 5px;
+    margin: 30px 0 0 52px;
+    border-bottom: 1px solid black;
+}
+
+@media(max-width:850px) {
+    .login-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .look {
+        margin-top: 70px;
+    }
+
+    .login {
+        margin: 0;
+        margin: 20px;
+    }
+}
+
+/*.........................................SignUp......................................................*/
+@media(max-width:922px) {
+    .signup-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .look {
+        margin-top: 70px;
+    }
+
+    .signup {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/*......................................About Us....................................................*/
+.about-contain,
+#contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 50px 20px 50px;
+
+}
+
+#about-img {
+    width: 1500px;
+    border-radius: 100px;
+}
+
+#about-img img {
+    border-radius: 1000px;
+}
+
+@media(max-width:800px) {
+    .about-contain {
+        flex-wrap: wrap;
+    }
+}
+
+/*.......................................Contact Us.................................................*/
+
+.contact-contain h2 {
+    margin: 70px 0 0 50px;
+}
+
+#contact-info {
+    margin: 10px 60px 10px 60px;
+}
+
+#contact-adress,
+#contact-both,
+#contact-social {
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: rgb(222, 239, 252);
+}
+
+#contact-form-first,
+#contact-form-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-name,
+#contact-customer-phone,
+#contact-customer-email,
+#contact-message {
+    padding: 30px;
+    background-color: rgb(222, 239, 252);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contact-submit {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#contact-submit button {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+@media(max-width:844px) {
+    #contact-info {
+        flex-wrap: wrap;
+    }
 }
