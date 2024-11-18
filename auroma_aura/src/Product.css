@@ -1,0 +1,36 @@
+.Product{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    padding:10px 30px 100px 30px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+}
+.product-rating{
+    display:flex;
+}
+.Product img{
+    width:100px;
+    height:100px;
+    object-fit:fit-content;
+
+}
+.Product button{
+    width:85px;
+    background-color: #f0d44b;
+    border: 1px solid #a88734 ;
+    border-radius: 5px;
+}
+
+.Product button:hover, .Product img:hover{
+    cursor: pointer;
+}
+
+.first-row, .second-row{
+    display:flex;
+    justify-content: space-around;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 
 function Header() {
   return (
@@ -16,29 +17,24 @@ function Header() {
 
       {/*...........................Header-search..........................*/}
       <div className="Header-search">
-          <input className="search-bar" type="text" placeholder="Search..." />
-          <SearchIcon className="search-symbol" />
+        <input className="search-bar" type="text" placeholder="Search..." />
+        <SearchIcon className="search-symbol" />
+
       </div>
 
       {/*.........................Header-nav-bar..........................*/}
       <div className="Header-nav-bar">
         <div className="option-1">
           <span className="login">
-            <a href="login.html">
-              <img src="../Images/user.png" width="15px"></img>Login
-            </a>
+            <a href="login.html">Hello, Login</a>
           </span>
         </div>
 
         <div className="option-2">
-          <span className="cart">
-            <a href="cart.html">
-              <img src="../Images/cart.png" width="20px"></img> Cart
-            </a>
-          </span>
+          <span className="Header-cart-icon"><ShoppingBagOutlinedIcon /></span><p>0</p>
         </div>
-
       </div>
+
     </div>
   );
 }

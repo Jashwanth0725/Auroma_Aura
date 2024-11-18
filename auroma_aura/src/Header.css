@@ -1,47 +1,78 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: teal;
+}
+
 .Header{
     display:flex;
-    background-color:lightcyan;
-    justify-content: space-between;
+    flex:1;
+    background-color:rgb(133, 190, 251);
+    justify-content: space-around;
     align-items:center;
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 10;
-
-
+    z-index: 100;
+    padding: 7px;
 }
 
 .Header-logo{
     margin-left: 3%;
-    background-color: antiquewhite;
+    justify-content: center;
+    align-items:center;
+}
+.Header-logo a{
+    display:flex;
+    align-items: center;
+}
+
+.Header-logo b{
+    padding-left:5px;
 }
 
 .Header-search{
-    background-color: antiquewhite;
     display: flex;
+    flex:1;
     justify-content: center;
     align-items: center;
 }
-form .search{
-    flex:1;
+
+.Header-search input[type="text"]{
+    width: 300px;
     
+    padding: 5px;
+    border-radius:10px 0px 0px 10px;
+    border: 1px solid lightblue;
+    border-right-color: white;
 }
-input[type="search"]{
-    min-width: 300px;
-    height: 20px;
-    border-radius: 3px;
-    border: 1px solid black;
-    padding: 12px;
+.Header-search input[type="search"]:focus{
+    outline: none;
+    border: 1px solid teal;
 }
 
-input[type=""]{
-    min-width: 300px;
-    height: 20px;
-    border-radius: 3px;
-    border: 1px solid black;
-    padding: 12px;
+.search-symbol{
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius:0px 10px 10px 0px;
+    border-left-color: white;
+    padding: 0.7px;
+}
+.search-symbol:hover{
+    cursor: pointer;
 }
 .Header-nav-bar{
     margin-right: 3%;
-    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Header-nav-bar .option-2,.Header-nav-bar .option-1{
+    padding:0px 7px 0 7px;
+    margin: 0px 20px 0 20px;
+}
+.option-2{
+    display: flex;
+    align-items: center;
 }

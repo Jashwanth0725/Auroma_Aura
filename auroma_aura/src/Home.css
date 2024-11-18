@@ -1,0 +1,30 @@
+.Home img{
+    margin: 0px;
+    width:102%;
+    height:350px;
+}
+.image{
+    
+    mask-image: linear-gradient(to bottom, rgb(86, 84, 84)65%,rgb(0,0,0,0));
+}
+.Home img{
+    margin-bottom: -70px;
+    z-index: -1;
+    
+}
+.categories{
+    text-align: center;
+    padding: 10px;
+    font-size:x-large;
+    color: rgb(104, 103, 103);
+}
+.rows{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.first-row, .second-row{
+    padding: 10px 10px;
+}
