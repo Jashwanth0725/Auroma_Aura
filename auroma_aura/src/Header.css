@@ -1,3 +1,5 @@
+
+
 a{
     text-decoration: none;
     color: black;
@@ -9,7 +11,7 @@ a:hover{
 .Header{
     display:flex;
     flex:1;
-    background-color:rgb(133, 190, 251);
+    background-color:rgb(205, 179, 179);
     justify-content: space-around;
     align-items:center;
     position: sticky;
@@ -67,12 +69,14 @@ a:hover{
     margin-right: 3%;
     display: flex;
     justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 .Header-nav-bar .option-2,.Header-nav-bar .option-1{
     padding:0px 7px 0 7px;
     margin: 0px 20px 0 20px;
+    
 }
-.option-2{
+.Header-cart-icon{
     display: flex;
-    align-items: center;
 }

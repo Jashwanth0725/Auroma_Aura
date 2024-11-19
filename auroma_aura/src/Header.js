@@ -31,7 +31,13 @@ function Header() {
         </div>
 
         <div className="option-2">
-          <span className="Header-cart-icon"><ShoppingBagOutlinedIcon /></span><p>0</p>
+          <a href="login.html">
+            <span className="Header-cart-icon">
+              <ShoppingBagOutlinedIcon />
+            
+            <p>0</p>
+            </span>
+          </a>
         </div>
       </div>
 

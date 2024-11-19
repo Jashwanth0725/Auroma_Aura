@@ -1,17 +1,26 @@
 .Product{
     display:flex;
+    flex:1;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid grey;
-    padding:10px 30px 100px 30px;
-    border-radius: 10px;
-    z-index: 1;
+    margin: 5px;
+    padding:10px 20px 20px 20px;
+    border-radius: 3px;
     background-color: white;
     overflow: hidden;
+    
+    
+}
+.Product> p{
+    width: 100%;
+    padding-bottom: 2px;
 }
 .product-rating{
     display:flex;
+    width: 100%;
 }
 .Product img{
     width:100px;
@@ -33,4 +42,6 @@
 .first-row, .second-row{
     display:flex;
     justify-content: space-around;
+    margin: 0 15px 0 15px;
+    padding: 0;
 }
