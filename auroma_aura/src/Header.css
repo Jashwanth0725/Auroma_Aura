@@ -2,16 +2,16 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-a:hover{
-    color: teal;
+a:hover, .option-2:hover{
+    border-bottom: 1px solid white;
 }
 
 .Header{
     display:flex;
     flex:1;
-    background-color:rgb(205, 179, 179);
+    background-color:rgba(0, 0, 0, 0.769);
     justify-content: space-around;
     align-items:center;
     position: sticky;
@@ -29,6 +29,7 @@ a:hover{
 .Header-logo a{
     display:flex;
     align-items: center;
+    padding: 5px;
 }
 
 .Header-logo b{
@@ -45,25 +46,29 @@ a:hover{
 .Header-search input[type="text"]{
     width: 300px;
     
-    padding: 5px;
+    padding: 9px;
     border-radius:10px 0px 0px 10px;
-    border: 1px solid lightblue;
+    border: 1px solid white;
     border-right-color: white;
+    
+    
 }
-.Header-search input[type="search"]:focus{
+.search-bar:focus{
     outline: none;
-    border: 1px solid teal;
+    border: 10px solid black;
+
 }
 
 .search-symbol{
     background-color: white;
-    border: 1px solid lightblue;
+    border: 1px solid white;
     border-radius:0px 10px 10px 0px;
-    border-left-color: white;
-    padding: 0.7px;
+    
+    padding: 4.7px;
 }
 .search-symbol:hover{
     cursor: pointer;
+    background-color: grey;
 }
 .Header-nav-bar{
     margin-right: 3%;
@@ -73,7 +78,7 @@ a:hover{
     align-items: center;
 }
 .Header-nav-bar .option-2,.Header-nav-bar .option-1{
-    padding:0px 7px 0 7px;
+    padding:0px 7px 0 7p;
     margin: 0px 20px 0 20px;
     
 }
