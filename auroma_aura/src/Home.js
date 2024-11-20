@@ -8,50 +8,54 @@ function Home() {
             <div className="home-image">
                 <img className="image" src="Images/earth.jpg" alt="show images"></img>
             </div>
-                <div className="rows">
-                    <Product 
+            <div className="rows">
+                <Product
                     id="12345"
-                    productname="Product-1" 
-                    price={20} 
-                    image ={<img src='Images/herbal.png' alt="product-image"></img>} 
-                    rating={5}/>
-                    <Product 
+                    productname="Natural Cones"
+                    price={20}
+                    image={<img src='Images/Cone Dhoop.png' alt="product-image"></img>}
+                    rating={5}
+                    description={"Natural Dhoop Cones: Divine Aroma for peace, prayers, and serenity."} 
+                    />
+                <Product
                     id="12345"
-                    productname="Product-2" 
-                    price={20} 
-                    image ={<img src='Images/Sambrani.png' alt="product-image"></img>} 
-                    rating={3}/>
-                    <Product 
+                    productname="Traditional Dhoops"
+                    price={20}
+                    image={<img src='Images/Traditional dhoop.png' alt="product-image"></img>}
+                    rating={4}
+                    description={"Traditional Dhoop: Pure Aroma for prayers, meditation, and tranquility."} 
+                    />
+                <Product
                     id="12345"
-                    productname="Product-3" 
-                    price={20} 
-                    image ={<img src='Images/Itachi.jpg' alt="product-image"></img>} 
-                    rating={4}/>
-                </div>
-
-                <div className="rows">
-                <Product 
+                    productname="Sambrani"
+                    price={40}
+                    image={<img src='Images/Sambrani.png' alt="product-image"></img>}
+                    rating={4} 
+                    description={"Pure Sambrani Dhoop: Traditional Aroma for rituals and relaxation."} 
+                    />
+            </div>
+            <div className="rows">
+                <Product
                     id="12345"
-                    productname="Product-1" 
-                    price={20} 
-                    image ={<img src='Images/herbal.png' alt="product-image"></img>} 
-                    rating={2}/>
-                    <Product 
+                    productname="Herbal Dhoops"
+                    price={60}
+                    image={<img src='Images/herbal.png' alt="product-image"></img>}
+                    rating={4} />
+                <Product
                     id="12345"
-                    productname="Product-3" 
-                    price={20} 
-                    image ={<img src='Images/Itachi.jpg' alt="product-image"></img>} 
-                    rating={3}/>
-                </div>
-                
-                <div className="rows">
-                <Product 
+                    productname="Aromatic Dhoops"
+                    price={60}
+                    image={<img src='Images/Aromatic Dhoop.png' alt="product-image"></img>}
+                    rating={4} />
+            </div>
+            <div className="rows">
+                <Product
                     id="12345"
-                    productname="Product-2" 
-                    price={20} 
-                    image ={<img src='Images/Sambrani.png' alt="product-image"></img>} 
-                    rating={3}/>
-                </div>            
+                    productname="Flower Dhoops"
+                    price={60}
+                    image={<img src='Images/floral.png' alt="product-image"></img>}
+                    rating={5} />
+            </div>
         </div>
 
 

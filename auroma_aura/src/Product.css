@@ -23,10 +23,15 @@
     width: 100%;
 }
 .Product img{
-    width:100px;
-    height:100px;
+    
     object-fit:fit-content;
-
+    max-height: 100px;
+    max-width: 150px;
+}
+.product-description{
+    
+    width: 100%;
+    padding: 5px;
 }
 .Product button{
     margin: 5px;
