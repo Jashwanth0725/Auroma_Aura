@@ -14,7 +14,7 @@ a:hover, .option-2:hover{
     background-color:rgba(0, 0, 0, 0.769);
     justify-content: space-around;
     align-items:center;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
