@@ -9,7 +9,7 @@ function Header() {
 
       {/*............................Header-logo..........................*/}
       <div className="Header-logo">
-        <a href="index.html">
+        <a href="/">
           <img src="Images/incense.png" alt="logo" width="35px"></img>
           <b>AromaAura</b>
         </a>
@@ -26,7 +26,7 @@ function Header() {
       <div className="Header-nav-bar">
         <div className="option-1">
           <span className="login">
-            <a href="login.html">Hello, Login</a>
+            <a href="/Login">Hello, Login</a>
           </span>
         </div>
 
