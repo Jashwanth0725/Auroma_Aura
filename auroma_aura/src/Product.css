@@ -1,7 +1,6 @@
 .Product{
     display:flex;
     flex:1;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,8 +10,6 @@
     border-radius: 3px;
     background-color: white;
     overflow: hidden;
-    
-    
 }
 .Product> p{
     width: 100%;

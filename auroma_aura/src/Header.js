@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,10 +10,10 @@ function Header() {
 
       {/*............................Header-logo..........................*/}
       <div className="Header-logo">
-        <a href="/">
+        <Link to="/">
           <img src="Images/incense.png" alt="logo" width="35px"></img>
           <b>AromaAura</b>
-        </a>
+        </Link>
       </div>
 
       {/*...........................Header-search..........................*/}
@@ -26,18 +27,18 @@ function Header() {
       <div className="Header-nav-bar">
         <div className="option-1">
           <span className="login">
-            <a href="/Login">Hello, Login</a>
+            <Link to="/Login">Hello, Login</Link>
           </span>
         </div>
 
         <div className="option-2">
-          <a href="login.html">
+          <Link to="/checkout">
             <span className="Header-cart-icon">
               <ShoppingBagOutlinedIcon />
             
             <p>0</p>
             </span>
-          </a>
+          </Link>
         </div>
       </div>
 

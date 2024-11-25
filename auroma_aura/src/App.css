@@ -1,4 +1,8 @@
 .app {
   margin-top: 0;
-  overflow: hidden;
+  width: 100%;
+}
+html,body{
+  overflow-x: hidden;
+  height: 100%;
 }

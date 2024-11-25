@@ -1,4 +1,6 @@
-
+*{
+    overflow: visible;
+}
 
 a{
     text-decoration: none;
@@ -11,14 +13,15 @@ a:hover, .option-2:hover{
 .Header{
     display:flex;
     flex:1;
-    background-color:rgba(0, 0, 0, 0.769);
+    background-color:rgba(0, 0, 0, 0.875);
     justify-content: space-around;
     align-items:center;
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: 0px;
     width: 100%;
-    z-index: 100;
+    z-index: 300;
     padding: 7px;
+    
 }
 
 .Header-logo{
@@ -78,7 +81,7 @@ a:hover, .option-2:hover{
     align-items: center;
 }
 .Header-nav-bar .option-2,.Header-nav-bar .option-1{
-    padding:0px 7px 0 7p;
+    padding:0px 7px 0 7px;
     margin: 0px 20px 0 20px;
     
 }
